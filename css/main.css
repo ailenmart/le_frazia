@@ -9,7 +9,7 @@ html,body{
 .contenedor{
 	display: grid;
 	grid-template-columns: 12 auto; 
-	grid-template-rows: 300px 300px 150px 300px 300px 100px 300px 250px 270px;
+	grid-template-rows: 300px 259px 150px 300px 300px 100px 300px 250px 270px;
 	grid-template-areas: "header header header header header header header header header header header header"
 						"slider slider slider slider slider slider slider slider slider slider slider slider"
 						"main1 main1 main1 main1 main1 main1 main1 main1 main1 main1 main1 main1"
@@ -156,4 +156,37 @@ input{
 }
 .logofooter{
 	height: 250px;
+}
+
+@media screen and (max-width: 380px){
+	.contenedor{
+		grid-template-rows: 300px 225px 150px 250px 250px 100px 220px 250px 270px;
+	}
+	.item4{
+		padding-left: 120px;
+		padding-right: 120px; 
+	}
+	.item4 img{
+		height: 180px;
+	}
+	.item4 p{
+		font-size: 1.7rem;
+		margin: 0;
+	}
+	.cont img{
+		height: 40px;
+		margin: 2px;
+	}
+	.info{
+		height: 150px;
+	}
+	.item6 p{
+		font-size: 1.4rem;
+	}
+	.item7 p{
+		font-size: 1.4rem;
+	}
+	.fab{
+		font-size: 3rem;
+	}
 }
